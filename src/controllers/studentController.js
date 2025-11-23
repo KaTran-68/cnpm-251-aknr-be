@@ -1,68 +1,67 @@
-StudentList = [
+studentList = [
   {
-    Name: "Nguyễn Văn A", 
-    Sex: "Nam",
-    MSSV: "24101101",
-    Email: "a.nguyen@hcmut.edu.vn",
-    Password: "123456",
-    Phone: "0111111111",
-    Faculty: "Khoa học và Kỹ thuật Máy tính",
-    Major: "Khoa học Máy tính",
-    GPA: 3.5,
-    StartDay: "19/11/2025",
+    name: "Nguyễn Văn A1",
+    sex: "Nam",
+    mssv: "24101100",
+    email: "a.nguyen@hcmut.edu.vn",
+    password: "123456",
+    phone: "0111111111",
+    faculty: "Khoa học và Kỹ thuật Máy tính",
+    major: "Khoa học Máy tính",
+    gpa: 3.5,
+    startDay: "19/11/2025",
   },
   {
-    Name: "Nguyễn Thị B", 
-    Sex: "Nữ",
-    MSSV: "2313138",
-    Email: "b.nguyen@hcmut.edu.vn",
-    Password: "123456",
-    Phone: "0111111112",
-    Faculty: "Cơ khí",
-    Major: "Cơ điện tử",
-    GPA: 3.1,
-    StartDay: "20/11/2025",
+    name: "Nguyễn Thị B1",
+    sex: "Nữ",
+    mssv: "2313136",
+    email: "b.nguyen@hcmut.edu.vn",
+    password: "123456",
+    phone: "0111111112",
+    faculty: "Cơ khí",
+    major: "Cơ điện tử",
+    gpa: 3.1,
+    startDay: "20/11/2025",
   },
   {
-    Name: "Đinh Quỳnh C", 
-    Sex: "Nữ",
-    MSSV: "2311486",
-    Email: "c.dinh@hcmut.edu.vn",
-    Password: "123456",
-    Phone: "0111111113",
-    Faculty: "Điện - Điện tử",
-    Major: "Điện tử Viễn thông",
-    GPA: 3.2,
-    StartDay: "21/11/2025",
+    name: "Đinh Quỳnh C1",
+    sex: "Nữ",
+    mssv: "2311485",
+    email: "c.dinh@hcmut.edu.vn",
+    password: "123456",
+    phone: "0111111113",
+    faculty: "Điện - Điện tử",
+    major: "Điện tử Viễn thông",
+    gpa: 3.2,
+    startDay: "21/11/2025",
   },
   {
-    Name: "Phạm Quang T", 
-    Sex: "Nam",
-    MSSV: "2313138",
-    Email: "thanh.pham@hcmut.edu.vn",
-    Password: "123456",
-    Phone: "0121111113",
-    Faculty: "Khoa học và Kỹ thuật Máy tính",
-    Major: "Khoa học Máy tính",
-    GPA: 3.8,
-    StartDay: "17/11/2025",
+    name: "Phạm Quang T1",
+    sex: "Nam",
+    mssv: "2313137",
+    email: "thanh.pham@hcmut.edu.vn",
+    password: "123456",
+    phone: "0121111113",
+    faculty: "Khoa học và Kỹ thuật Máy tính",
+    major: "Khoa học Máy tính",
+    gpa: 3.8,
+    startDay: "17/11/2025",
   }
 ];
-
 
 // Xử lý logic API để lấy danh sách dữ liệu
 const getData = async (req, res) => {
   try {
-    const { Email } = req.query;
+    const { email } = req.query;
 
-    // Nếu có query Email → trả về student tương ứng
-    if (Email) {
-      const student = StudentList.find(s => s.Email === Email);
+    // Nếu có query email → trả về student tương ứng
+    if (email) {
+      const student = studentList.find(s => s.email === email);
 
       if (!student) {
         return res.status(404).json({
           success: false,
-          message: "Không tìm thấy sinh viên với Email này",
+          message: "Không tìm thấy sinh viên với email này",
         });
       }
 
@@ -72,10 +71,10 @@ const getData = async (req, res) => {
       });
     }
 
-    // Nếu không có Email → trả về toàn bộ danh sách
+    // Nếu không có email → trả về toàn bộ danh sách
     res.status(200).json({
       success: true,
-      data: StudentList,
+      data: studentList,
     });
 
   } catch (error) {
@@ -85,6 +84,5 @@ const getData = async (req, res) => {
     });
   }
 };
-
 
 module.exports = { getData };
