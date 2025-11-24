@@ -85,22 +85,31 @@ const getData = async (req, res) => {
 };
 
 const updateStatus = (req, res) => {
-    const { email } = req.params;
-    const { status } = req.body; // FE gửi: { status: "Approved" }
+    const { email, status } = req.body;
 
+    // Kiểm tra thiếu dữ liệu
+    if (!email || !status) {
+        return res.status(400).json({
+            success: false,
+            message: "Thiếu email hoặc status trong body.",
+        });
+    }
+
+    // Tìm application theo email
     const application = applicationList.find(app => app.email === email);
 
     if (!application) {
         return res.status(404).json({
             success: false,
-            message: "Không tìm thấy ứng viên với email này."
+            message: "Không tìm thấy application có email này.",
         });
     }
 
+    // Cập nhật status và ngày phản hồi
     application.status = status;
     application.dayRespond = new Date().toLocaleDateString("vi-VN");
 
-    return res.json({
+    return res.status(200).json({
         success: true,
         message: "Cập nhật trạng thái thành công.",
         data: application,

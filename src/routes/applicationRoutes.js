@@ -5,7 +5,7 @@ const { getData, updateStatus } = require('../controllers/applicationController'
 // Lấy danh sách dữ liệu
 router.get('/', getData);
 
-router.patch('/:email/status', updateStatus);
+router.patch('/status', updateStatus);
 // Tạo dữ liệu mới
 //router.post('/', createData);
 
