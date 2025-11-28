@@ -11,7 +11,7 @@ classList = [
         time: "18:00-20:00",
         location: "Khu tự học KMS BK.B6, cơ sở 2",
         status: "Đã hoàn thành",
-        discriptionClass: "Chương 2: Ứng dụng đạo hàm trong khảo sát và vẽ đồ thị hàm số",
+        descriptionClass: "Chương 2: Ứng dụng đạo hàm trong khảo sát và vẽ đồ thị hàm số",
     },
     {
         tutor: "Nguyễn Thị B",
@@ -25,7 +25,7 @@ classList = [
         time: "15:00-17:00",
         location: "Khu tự học KMS BK.B6, cơ sở 2",
         status: "Sắp diễn ra",
-        discriptionClass: "Chương 2: Ứng dụng đạo hàm trong khảo sát và vẽ đồ thị hàm số",
+        descriptionClass: "Chương 2: Ứng dụng đạo hàm trong khảo sát và vẽ đồ thị hàm số",
     },
     {
         tutor: "Nguyễn Văn A",
@@ -39,7 +39,7 @@ classList = [
         time: "15:00-17:00",
         location: "Khu tự học KMS BK.B6, cơ sở 2",
         status: "Đã hoàn thành",
-        discriptionClass: "Chương 2: Ứng dụng đạo hàm trong khảo sát và vẽ đồ thị hàm số",
+        descriptionClass: "Chương 2: Ứng dụng đạo hàm trong khảo sát và vẽ đồ thị hàm số",
     },
 ];
 

@@ -9,7 +9,7 @@ tutorList = [
         faculty: "Khoa học và Kỹ thuật Máy tính",
         major: "Khoa học Máy tính",
         gpa: 3.5,
-        discription: "Có khả năng dạy tốt các môn Đại cương, đặc biệt là Giải tích 1 và Vật lý 1",
+        description: "Có khả năng dạy tốt các môn Đại cương, đặc biệt là Giải tích 1 và Vật lý 1",
     },
     {
         name: "Nguyễn Thị B",
@@ -21,7 +21,7 @@ tutorList = [
         faculty: "Cơ khí",
         major: "Cơ điện tử",
         gpa: 3.1,
-        discription: "Đảm bảo 4.0 cho học viên ở môn học: Vẽ kĩ thuật, Cơ học vật rắn",
+        description: "Đảm bảo 4.0 cho học viên ở môn học: Vẽ kĩ thuật, Cơ học vật rắn",
     },
     {
         name: "Đinh Quỳnh C",
@@ -33,7 +33,7 @@ tutorList = [
         faculty: "Điện - Điện tử",
         major: "Điện tử Viễn thông",
         gpa: 3.2,
-        discription: "Có khả năng giảng bài dễ hiểu, giúp học viên nắm vững kiến thức các môn Đại cương, như: Vật lý 1, Hóa Đại cương",
+        description: "Có khả năng giảng bài dễ hiểu, giúp học viên nắm vững kiến thức các môn Đại cương, như: Vật lý 1, Hóa Đại cương",
     },
     {
         name: "Phạm Quang T",
@@ -45,7 +45,7 @@ tutorList = [
         faculty: "Khoa học và Kỹ thuật Máy tính",
         major: "Khoa học Máy tính",
         gpa: 3.8,
-        discription: "Hài hước, dễ gần, giúp học viên nắm vững kiến thức lập trình cơ bản như Nhập môn điện toán, Kỹ thuật lập trình, Cấu trúc dữ liệu và Giải thuật",
+        description: "Hài hước, dễ gần, giúp học viên nắm vững kiến thức lập trình cơ bản như Nhập môn điện toán, Kỹ thuật lập trình, Cấu trúc dữ liệu và Giải thuật",
     }
 ];
 
