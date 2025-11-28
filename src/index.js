@@ -4,7 +4,11 @@ const app = require('./app');
 
 const PORT = process.env.PORT || 6868;
 
-// Kết nối database và chạy server
+app.use(cors({
+  origin: "http://localhost:3000",
+  methods: "GET,POST,PUT,DELETE",
+  credentials: true
+}));
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
