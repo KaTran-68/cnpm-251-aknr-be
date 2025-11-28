@@ -96,7 +96,35 @@ classList = [
       location: "Online",
       status: "Available",
       descriptionClass: "",
-  }
+  },
+  {
+    tutor: "Võ Gia G",
+    tutorId: "22117890",
+    tutorEmail: "g.vo@hcmut.edu.vn",
+    tutorPhone: "0111111117",
+    student: "Nguyễn Gia G1",
+    studentMssv: "22117891",
+    subject: "Xác suất thống kê",
+    date: "07/12/2025",
+    time: "14:00-16:00",
+    location: "Khu tự học KMS BK.B6, cơ sở 2",
+    status: "Pending",
+    descriptionClass: "Biến ngẫu nhiên và phân phối xác suất",
+  },
+  {
+      tutor: "Đặng Khánh H",
+      tutorId: "23123388",
+      tutorEmail: "h.dang@hcmut.edu.vn",
+      tutorPhone: "0111111118",
+      student: "",
+      studentMssv: "",
+      subject: "Nhập môn AI",
+      date: "25/12/2025",
+      time: "20:00-22:00",
+      location: "Online",
+      status: "Pending",
+      descriptionClass: "Giới thiệu về Machine Learning",
+  },
 ];
 
 
