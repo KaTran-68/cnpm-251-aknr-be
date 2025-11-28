@@ -24,7 +24,7 @@ classList = [
         date: "29/12/2025",
         time: "15:00-17:00",
         location: "Khu tự học KMS BK.B6, cơ sở 2",
-        status: "Upgoing",
+        status: "Upcoming",
         descriptionClass: "Chương 2: Ứng dụng đạo hàm trong khảo sát và vẽ đồ thị hàm số",
     },
     {
@@ -80,7 +80,7 @@ classList = [
         date: "30/12/2025",
         time: "13:00-15:00",
         location: "Online",
-        status: "Upgoing",
+        status: "Upcoming",
         descriptionClass: "Tính chất hóa học của kim loại kiềm",
     },
     {
