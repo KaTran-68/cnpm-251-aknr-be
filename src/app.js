@@ -7,11 +7,12 @@ const tutorRoutes = require('./routes/tutorRoutes');
 const classRoutes = require('./routes/classRoutes');
 const applicationRoutes = require('./routes/applicationRoutes');
 const loginRoutes = require('./routes/loginRoutes')
-
+const configCors = require("./config/cors");
 // Middleware cơ bản
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+configCors(app)
 // Health check / root route
 app.get('/', (req, res) => {
 	res.status(200).send('API is running. Use /api/users or /api/sessions');
