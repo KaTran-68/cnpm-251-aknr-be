@@ -6,6 +6,7 @@ const studentRoutes = require('./routes/studentRoutes');
 const tutorRoutes = require('./routes/tutorRoutes');
 const classRoutes = require('./routes/classRoutes');
 const applicationRoutes = require('./routes/applicationRoutes');
+const loginRoutes = require('./routes/loginRoutes')
 
 // Middleware cơ bản
 app.use(express.json());
@@ -18,6 +19,7 @@ app.get('/', (req, res) => {
 
 // Đăng ký Routes
 app.use('/api/users', userRoutes);
+app.use('api/login', loginRoutes)
 app.use('/api/sessions', sessionRoutes);
 app.use('/api/students', studentRoutes);
 app.use('/api/tutor', tutorRoutes);
